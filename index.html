@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="eQEMYA9thdYaneLyLbIlkYhckY4avxtha4XO8TM7">
+    <meta name="_base_url" content="https://dhaka5.com">
+    
+    <!-- SOCIAL MEDIA META --> 
+    <meta property="og:site_name" content="হারুনুর রশীদ মুন্না | ঢাকা ০৫">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="www.dhaka12.com">
+    <meta property="og:title" content="হারুনুর রশীদ মুন্না | ঢাকা ০৫">
+    <meta property="og:description" content="হারুনুর রশীদ মুন্নাকে ঢাকা ০৫ আসনে নৌকা মার্কায় ভোট দিন">
+    <meta property="og:image" content="https://dhaka12.com/public/medias/og.png">
+    
+    <title>হারুনুর রশীদ মুন্না | ঢাকা ০৫</title>
+
+    <!-- favicons Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://dhaka12.com/public/medias/logo/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://dhaka12.com/public/medias/logo/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://dhaka12.com/public/medias/logo/favicon.ico" />
+    
+
+    
+    <link rel="stylesheet" href="app.css" type="text/css">
+
+    
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script type="text/javascript" src="./app.js"></script>
+
+</head>
+<body class="election-home">
+    <div class="container-fluid m-0 p-0 w-100">
+        <style>
+.hero-section {
+    background-image: url("https://dhaka12.com/public/medias/img/mini-bg.png");
+}
+.modal-content .btn-close {
+    background-image: url("https://dhaka12.com/public/medias/img/close.png");
+}
+@media screen and (max-width: 600px) {
+	.hero-section {
+		background-image: url("https://dhaka12.com/public/medias/img/m-bg.png");
+    }
+}
+@media screen and (max-width: 414px) {
+	.hero-section {
+		background-image: url("https://dhaka12.com/public/medias/img/m-bg.png");
+    }
+}
+</style>
+<section class="m-view">
+    <div class="hero-section">
+      <div class="my-container">
+        <div class="section-content">
+          <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-6 flex-end flex-sm-center">
+              <div class="hero-content text-center">
+                <a href="javascript:void(0)"><img class="m-0" src="munna.png" alt=""></a>
+                <h2>হারুনুর রশীদ মুন্নাকে <br> ঢাকা ০৫ আসনে</h2>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="hero-img text-start">
+                <img src="https://dhaka12.com/public/medias/img/boat.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="loading-container" id="loading" style="display: none;">
+          <div class="loading"></div>
+          <div id="loading-text">loading</div>
+      </div>
+      <div class="w-100 content-wrapper">
+        <div class="my-container">
+    <div class="row">
+      <div class="col-12">
+        <div class="contact-area">
+          <h3 style="padding-bottom: 5px;">আপনার ভোট কেন্দ্রের নাম জানতে আপনার তথ্য বাংলায় প্রদান করুন</h3>
+          <p class="text-white w-100 text-center mb-4" style="font-size: 11px;">অনুসন্ধানের জন্য <b class="text-info">জন্ম তারিখ</b> এবং <b class="text-info">ওয়ার্ড</b> পূরণ করা বাধ্যতামূলক</p>
+          <form action="" method="POST" enctype="multipart/form-data" url="https://dhaka12.com/search/frontend" id="searchForm">
+            <input type="hidden" name="_token" value="eQEMYA9thdYaneLyLbIlkYhckY4avxtha4XO8TM7" autocomplete="off">            <div class="row d-flex justify-content-center">
+              <div class="col-md-3 mb-3">
+                <input type="text" class="form-control" name="name" id="exampleFormControlInput1" placeholder="নাম">
+              </div>
+              <div class="col-md-3 mb-3 d-none">
+                <input type="hidden" class="form-control" name="father" id="exampleFormControlInput1" placeholder="পিতা/স্বামীর নাম">
+              </div>
+              <div class="col-md-3 mb-3 position-relative">
+                <input type="text" class="form-control" id="dob" name="dob" id="date_of_birth" placeholder="জন্ম তারিখ(০১/০১/১৯৯৫)" required>
+                <span class="position-absolute text-danger" style="font-size: 22px; top: -5px; right: 15px; font-weight: bold;">*<span class="visually-hidden">Required</span></span>
+              </div>
+              <div class="col-md-3 mb-3">
+                <div class="mb-3 position-relative">
+                  <select class="form-select" id="ward" name="ward" aria-label="Default select example" required>
+                    <option selected disabled value="">ওয়ার্ড</option>
+                                          <option value="ward24">ওয়ার্ড ৪৮</option>
+                                          <option value="ward25">ওয়ার্ড ৪৯</option>
+                                          <option value="ward26">ওয়ার্ড ৫০</option>
+                                          <option value="ward27">ওয়ার্ড ৬০</option>
+                                          <option value="ward35">ওয়ার্ড ৬১</option>
+                                          <option value="ward36">ওয়ার্ড ৬২</option>
+                                      </select>
+                  <span class="position-absolute text-danger" style="font-size: 22px; top: -5px; right: 3px; font-weight: bold;">*<span class="visually-hidden">Required</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="search">অনুসন্ধান</button>
+            </div>
+                          
+                        <div class="alert alert-danger mt-3" id="alert" role="alert" style="display: none;"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+    </div>
+</section>
+<footer>
+  <div class="footer-text text-center ">
+  <div class="my-container">
+    <div class="footer-text d-flex align-items-center justify-content-center">
+      
+      <span class="text-white">Crafted by ❤ <a href="https://webasesolutions.com" target="_blank">Webase</a></span>
+    </div>
+  </div>
+  </div>
+</footer>
+  <script>
+    $( document ).ready(function() {
+      $('audio').remove();
+    });
+  </script>    </div>
+</body>
+</html>
